@@ -4,12 +4,13 @@ const { initializeDatabase } = require("./model/User");
 const userRoute = require("./routes/user");
 const authRoute = require("./routes/auth");
 
+const cors = require("cors");
 const coursesRoute = require("./routes/courses");
 const aboutRoute = require("./routes/about");
 const bookRoute = require("./routes/books");
 const applicationRoute = require("./routes/application");
 const projectRoute = require("./routes/project");
-
+app.use(cors());
 const productRoute = require("./routes/Product");
 const path = require("path");
 app.use(express.json()); // Middleware to parse JSON bodies
