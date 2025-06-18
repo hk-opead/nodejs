@@ -2,8 +2,8 @@ const { Sequelize, Op, Model, DataTypes } = require("sequelize");
 const CryptoJs = require("crypto-js");
 
 // Database connection
-const sequelize = new Sequelize("blogapp", "root", "", {
-  host: "localhost",
+const sequelize = new Sequelize("nodejs_xb5k", "nodejs_xb5k_user", "PEXFM5WefmMzhdZvObqfd55INxfy24P9", {
+  host: "dpg-d18j1n6mcj7s73de7h8g-a",
   dialect: "mysql",
   logging: false,
 });
