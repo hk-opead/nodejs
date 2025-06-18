@@ -7,7 +7,7 @@ const sequelize = new Sequelize(
   "nodejs_xb5k_user",
   "PEXFM5WefmMzhdZvObqfd55INxfy24P9",
   {
-    host: "localhost",
+    host: "dpg-d18j1n6mcj7s73de7h8g-a.oregon-postgres.render.com", // ⚠️ هذا هو الـ external host
     port: 5432,
     dialect: "postgres",
     logging: false,
