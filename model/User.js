@@ -2,11 +2,17 @@ const { Sequelize, Op, Model, DataTypes } = require("sequelize");
 const CryptoJs = require("crypto-js");
 
 // Database connection
-const sequelize = new Sequelize("nodejs_xb5k", "nodejs_xb5k_user", "PEXFM5WefmMzhdZvObqfd55INxfy24P9", {
-  host: "dpg-d18j1n6mcj7s73de7h8g-a",
-  dialect: "postgres",
-  logging: false,
-});
+const sequelize = new Sequelize(
+  "nodejs_xb5k",
+  "nodejs_xb5k_user",
+  "PEXFM5WefmMzhdZvObqfd55INxfy24P9",
+  {
+    host: "localhost",
+    port: 5432,
+    dialect: "postgres",
+    logging: false,
+  }
+);
 // const sequelize = new Sequelize("sqlite::memory:");
 // User Model Definition
 const User = sequelize.define(
