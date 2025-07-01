@@ -17,9 +17,9 @@ const About = sequelize.define(
       type: DataTypes.TEXT, // TEXT might be better for longer descriptions
       allowNull: false,
     },
-    comunication: {
-      type: DataTypes.TEXT, // TEXT might be better for longer descriptions
-      allowNull: false,
+    img: {
+      type: DataTypes.STRING,
+      allowNull: true,
     },
     places: {
       type: DataTypes.JSON,

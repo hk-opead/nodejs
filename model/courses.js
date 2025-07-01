@@ -13,8 +13,9 @@ const Courses = sequelize.define(
       allowNull: false,
     },
     desc: {
-      type: DataTypes.TEXT, // TEXT might be better for longer descriptions
-      allowNull: false,
+      type: DataTypes.JSON,
+      allowNull: true,
+      defaultValue: [],
     },
     details: {
       type: DataTypes.TEXT, // TEXT might be better for longer descriptions
